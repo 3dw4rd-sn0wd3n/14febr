@@ -1,16 +1,33 @@
-        body {
-            background-color: #f8e1e1;
-            text-align: center;
-            font-family: Arial, sans-serif;
-        }
-        h1 {
-            color: #d50000;
-        }
-        p {
-            font-size: 20px;
-            color: #333;
-        }
-        .heart {
-            color: #d50000;
-            font-size: 50px;
-        }
+body {
+    background-color: #f8e1e1;
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    color: #d50000;
+}
+
+p {
+    font-size: 20px;
+    color: #333;
+}
+
+.heart {
+    color: #d50000;
+    font-size: 50px;
+}
+
+img {
+    height: 150px;
+    transition: transform 0.3s, filter 0.3s; /* Плавный переход для трансформации и размытия */
+}
+
+video {
+    height: 150px;
+}
+
+.sticker {
+    position: absolute; /* Позволяет свободно размещать стикеры */
+    filter: blur(3  px); /* Легкое размытие */
+}
