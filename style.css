@@ -2,6 +2,11 @@ body {
     background-color: #f8e1e1;
     text-align: center;
     font-family: Arial, sans-serif;
+    position: relative; /* Устанавливаем относительное позиционирование для контейнера */
+}
+.container {
+    display: flex;
+    flex-wrap: wrap; /* Позволяет элементам переноситься на новую строку */
 }
 
 h1 {
@@ -11,6 +16,9 @@ h1 {
 p {
     font-size: 20px;
     color: #333;
+    position: absolute;
+    margin: 20px 0;
+    padding: 30px 0;
 }
 
 .heart {
@@ -19,15 +27,27 @@ p {
 }
 
 img {
-    height: 150px;
-    transition: transform 0.3s, filter 0.3s; /* Плавный переход для трансформации и размытия */
+    height: 100%;
 }
-
+.flowers{
+    height: 15%;
+}
 video {
-    height: 150px;
+    height: 100%;
 }
-
-.sticker {
-    position: absolute; /* Позволяет свободно размещать стикеры */
-    filter: blur(3  px); /* Легкое размытие */
+@media (max-width: 768px)
+.text-cont{
+    display: flex; /* Включает Flexbox */
+    justify-content: center; /* Центрирует элементы по горизонтали */
+    align-items: center; /* Центрирует элементы по вертикали (если высота задана) */
+}
+@media (max-width: 768px)
+.text{
+    text-align: center;
+    width: 50%;
+    margin-top: 30%;
+}
+@media (min-width: 768px)
+.text{
+    margin-top: 25%;
 }
